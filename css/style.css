@@ -19,12 +19,13 @@ header {
     font-weight: 300;
     position: relative;
     margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
 }
 
 nav a {
     margin: 0 10px;
-    color: #485572;
+    color: #000000; 
+    /* #485572; */
     text-decoration: none;
     font-weight: 400;
 }
@@ -43,9 +44,9 @@ aside {
 }
 
 #profile-pic {
-    width: 100%;
-    /* border-radius: 50%; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    border-radius: 50%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     margin-bottom: 0px;
 }
 
@@ -79,24 +80,43 @@ main {
 /* Section titles */
 h1, h2 {
     font-weight: 700;
-    color: #485572;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #485572;
+    color: #666669;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #eee;
+    /* #485572; */
     margin-bottom: 10px;
 }
 
-/* List styles */
 ul {
-    list-style-type: none;
-    padding: 0;
+    margin: 10px 0;
+    padding-left: 15px;
 }
 
-#news ul, #publications ul, #projects ul, #cv ul {
+/* #publications ul, #projects ul, #cv ul {
     margin: 10px 0;
+    padding-left: 25px;
+} */
+
+#news ul {
+    /* list-style-type: disc; */
+    list-style-type: none;
+    margin: 10px 0;
+    padding-left: 10px;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.emoji {
+    margin-right: 5px;
+    font-size: 1.2em; /* Adjust size if needed */
+}
+
+.red-underline{
+    color: #c61212cb;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .project-item {
@@ -104,7 +124,7 @@ li {
     align-items: flex-start;
     margin-bottom: 20px;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .project-image {
@@ -112,7 +132,8 @@ li {
     height: auto;
     margin-right: 15px;
     border: none;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    /* box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2); */
 }
 
 .project-details {
@@ -126,7 +147,7 @@ li {
 
 .project-links a {
     margin-right: 5px;
-    color: #1a3a80;
+    color: #485572;
     font-size: 1.0em;
 }
 
@@ -140,15 +161,16 @@ li {
     align-items: flex-start;
     margin-bottom: 20px;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .publication-image {
     width: 150px; 
     height: auto;
     margin-right: 15px;
+    border-radius: 5%;
     border: none; /* 1px solid #333; */
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2); */
 }
 
 .publication-details {
@@ -157,7 +179,7 @@ li {
 
 .pub-links a {
     margin-right: 5px;
-    color: #1a3a80;
+    color: #485572;
     /* font-weight: bold; */
     font-size: 1.0em;
 }
@@ -211,7 +233,7 @@ footer {
 }
 
 a {
-    color: #2b53a8;
+    color: #2172a1;
     text-decoration: none;
 }
 
