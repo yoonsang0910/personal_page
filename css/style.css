@@ -77,14 +77,28 @@ main {
     padding-left: 20px;
 }
 
-/* Section titles */
 h1, h2 {
     font-weight: 700;
     color: #666669;
     padding-bottom: 3px;
-    border-bottom: 2px solid #eee;
-    /* #485572; */
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+section + section::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 40px 0 20px 0;
+}
+
+.section-box {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
 }
 
 ul {
@@ -110,7 +124,7 @@ li {
 
 .emoji {
     margin-right: 5px;
-    font-size: 1.2em; /* Adjust size if needed */
+    font-size: 1.2em;
 }
 
 .red-underline{
@@ -177,12 +191,39 @@ li {
     flex: 1;
 }
 
-.pub-links a {
+/* .pub-links a {
     margin-right: 5px;
     color: #485572;
-    /* font-weight: bold; */
     font-size: 1.0em;
+} */
+.pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+    text-decoration: none;
 }
+
+.pub-links a {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #222;
+    border-radius: 3px;
+    color: #222;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.pub-links a:hover {
+    background-color: #aeaeaebc;
+    text-decoration: none;
+    /* color: #000000; */
+}
+
 
 footer {
     text-align: center;
@@ -233,7 +274,8 @@ footer {
 }
 
 a {
-    color: #2172a1;
+    /* color: #2172a1; */
+    color: #0939d7bc;
     text-decoration: none;
 }
 
@@ -244,7 +286,7 @@ a:hover {
 
 .contact-links a:hover i {
     /* filter: brightness(0.5); */
-    color: #1195b6;
+    color: #aeaeaebc;
 }
 
 .badge {
@@ -282,4 +324,36 @@ a:hover {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#news li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+#news li .emoji {
+    margin-right: 8px;
+    font-size: 1.2em;
+    flex-shrink: 0;
+}
+
+#news li .news-date {
+    width: 110px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+#news li .news-content {
+    flex: 1;
+    color: #333;
 }
