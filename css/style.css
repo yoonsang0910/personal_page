@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fafafa;
-    max-width: 1350px;
+    max-width: 1050px;
     /* margin-left: 200px; */
     margin: auto;
 }
@@ -275,7 +275,8 @@ footer {
 
 a {
     /* color: #2172a1; */
-    color: #0939d7bc;
+    /* color: #0939d7bc; */
+    color: #13a65cdd;
     text-decoration: none;
 }
 
